@@ -27,7 +27,7 @@ export default async function register(app) {
       canRefund: true,
       displayName: "Stripe Card",
       functions: {
-        capturePayment: stripeCapturePayment,
+        capturePayment: stripeCapturePayment, //this is the actual payment method.
         createAuthorizedPayment: stripeCreateAuthorizedPayment,
         createRefund: stripeCreateRefund,
         listRefunds: stripeListRefunds
